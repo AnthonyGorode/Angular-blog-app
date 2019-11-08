@@ -1,9 +1,9 @@
 <div class="container">
   <h1 class="text-center">Mon Blog</h1>
-  <ul class="list-group mt-2">
+  <ul class="list-group mt-3 mb-3">
     <app-blog 
       [posts]="posts" 
-      (setNewPost)="setLikeItsPost($event[0],$event[1])"
+      (setNewPost)="setLikeOrUnlikePost($event[0],$event[1],$event[2])"
     ></app-blog>
   </ul>
 </div>

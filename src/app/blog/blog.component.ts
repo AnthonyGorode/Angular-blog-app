@@ -13,15 +13,15 @@ import {
 export class BlogComponent implements OnInit {
 
   @Input() public posts: Array<any>;
-  @Output() public setNewPost = new EventEmitter<Array<number>>();
+  @Output() public setNewPost = new EventEmitter<Array<any>>();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  public setPost(like: number, type: string, index: number): void {
-    type === "like" ? like++ : like--;
-    this.setNewPost.emit([like,index]);
+  public setPost(like: number, type: string, index: number): void {  
+    like++;
+    this.setNewPost.emit([like,index,type]);
   }
 }
