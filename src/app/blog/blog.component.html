@@ -1,0 +1,21 @@
+<li *ngFor="let post of posts;let i = index;"  
+    [ngClass]="{
+        'list-group-item': true, 
+        'list-group-item-action': true, 
+        'p-4': true,
+        'list-group-item-success': post.likeIts > 0,
+        'list-group-item-danger': post.likeIts < 0
+    }"
+
+                
+>
+    <div class="d-flex justify-content-between">
+        <h4>{{ post.title }}</h4>
+        <p><i>{{ post.createdAt | date: 'EEEE d MMMM y': '' : 'fr-FR' }}</i></p>
+    </div>
+    <p>{{ post.content }}</p>
+    <div class="d-flex">
+        <button class="btn btn-success m-2" (click)="setPost(post.likeIts,'like',i)">LIKE</button>
+        <button class="btn btn-danger m-2" (click)="setPost(post.likeIts,'dislike',i)">DISLIKE</button>
+    </div>
+</li>
