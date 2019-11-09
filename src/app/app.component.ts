@@ -38,7 +38,7 @@ export class AppComponent {
       "Les carottes sont cuites",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, eaque. Aliquid alias hic error minus libero sapiente obcaecati necessitatibus deleniti, officia perferendis molestiae, quam esse totam quae excepturi. Eligendi, distinctio!",
       0,
-      0
+      1
     ),
     new Post(
       "Mon poisson rouge s'est noyé",
@@ -47,9 +47,9 @@ export class AppComponent {
       0
     ),
     new Post(
-      "Il boit du lait de chèvre à la source",
+      "Avengers... Rassemblement ! <i class='fas fa-music'></i> taaatatatataaaataaataaataaa... <i class='fas fa-music'></i> ",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, eaque. Aliquid alias hic error minus libero sapiente obcaecati necessitatibus deleniti, officia perferendis molestiae, quam esse totam quae excepturi. Eligendi, distinctio!",
-      0,
+      1,
       0
     )
   ]

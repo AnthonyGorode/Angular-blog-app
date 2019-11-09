@@ -10,7 +10,7 @@
                 
 >
     <div class="d-flex justify-content-between">
-        <h4>{{ post.title }}</h4>
+        <h4 [innerHTML]="post.title"></h4>
         <p><i>{{ post.createdAt | date: 'EEEE d MMMM y': '' : 'fr-FR' }}</i></p>
     </div>
     <p>{{ post.content }}</p>
