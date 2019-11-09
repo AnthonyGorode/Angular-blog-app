@@ -10,7 +10,12 @@
                 
 >
     <div class="d-flex justify-content-between">
-        <h4 [innerHTML]="post.title"></h4>
+        <div title="Be careful your headphone!" class="avengers" *ngIf="i === 2; else otherPost">          
+            <h4 [innerHTML]="post.title" (click)="playAudio()"></h4>
+        </div>
+        <ng-template #otherPost>
+            <h4>{{ post.title }}</h4>
+        </ng-template>
         <p><i>{{ post.createdAt | date: 'EEEE d MMMM y': '' : 'fr-FR' }}</i></p>
     </div>
     <p>{{ post.content }}</p>

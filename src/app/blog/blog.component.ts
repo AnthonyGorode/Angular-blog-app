@@ -1,6 +1,6 @@
 import { 
   Component, 
-  OnInit, 
+  OnInit,
   Input, 
   Output, 
   EventEmitter } from '@angular/core';
@@ -15,7 +15,12 @@ export class BlogComponent implements OnInit {
   @Input() public posts: Array<any>;
   @Output() public setNewPost = new EventEmitter<Array<any>>();
 
-  constructor() { }
+  private audio: HTMLAudioElement;
+
+  constructor() {
+    this.audio = new Audio();
+    this.audio.src = "../../assets/audio/avengers.mp3";
+   }
 
   ngOnInit() {
   }
@@ -24,4 +29,11 @@ export class BlogComponent implements OnInit {
     like++;
     this.setNewPost.emit([like,index,type]);
   }
+
+  public playAudio(){
+    this.audio.volume = 0.1;
+    this.audio.play();
+      
+  }
+
 }

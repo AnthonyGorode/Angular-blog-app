@@ -1,0 +1,10 @@
+.avengers {
+    cursor: pointer;
+    background: #0062cc;
+    padding: 10px;
+    color: #fff;
+    border-radius: 20px;
+}
+.avengers:hover {
+    background: radial-gradient(#0062cc, transparent);
+}

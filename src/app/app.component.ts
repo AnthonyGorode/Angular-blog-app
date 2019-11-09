@@ -47,7 +47,7 @@ export class AppComponent {
       0
     ),
     new Post(
-      "Avengers... Rassemblement ! <i class='fas fa-music'></i> taaatatatataaaataaataaataaa... <i class='fas fa-music'></i> ",
+      "<i class='fas fa-music'></i> Avengers... Assemble ! <i class='fas fa-music'></i>",
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, eaque. Aliquid alias hic error minus libero sapiente obcaecati necessitatibus deleniti, officia perferendis molestiae, quam esse totam quae excepturi. Eligendi, distinctio!",
       1,
       0
